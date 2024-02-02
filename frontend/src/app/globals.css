@@ -15,3 +15,30 @@
     color: var(--text-white);
   }
 }
+
+/* Corner */
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0);
+}
+
+/* Width */
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 5px; /* Adicione um border-radius aqui */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #8b5cf6;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0a0a0a;
+}

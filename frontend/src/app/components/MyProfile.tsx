@@ -1,32 +1,20 @@
 import Img from "next/image";
 import Link from "next/link";
 
-import NoImage from "@/app/imgs/no-image.jpg";
+// import NoImage from "@/app/imgs/no-image.jpg";
+import profileImage from '@/app/imgs/manosanti-image.webp';
 
 const MyProfile = () => {
   return (
-    <div className="bg-stone-950 h-screen">
-      <div className="flex flex-col justify-center max-w-4xl mx-auto h-5/6">
-        <h2 className="text-4xl font-semibold w-3/4">
-          Ajudando empresas a construírem <span className="text-violet-500">produtos digitais</span>{" "}de forma moderna e
-          de alta qualidade.
-        </h2>
-        <p className="text-slate-400 w-3/4">
-          Uma mistura de Design, Desenvolvimento Frontend e habilidade
-          profissional que vão destacar seu produto no mercado.
-        </p>
-        <button className="w-min bg-violet-500 px-7 py-3 rounded-md">
-          <Link href="/">Instagram</Link>
-        </button>
-      </div>
-
-      <div className="grid grid-cols-2 p-2 max-w-4xl mx-auto">
-        <Img src={NoImage} alt="teste" />
+    <div className="bg-stone-950">
+    <div className="bg-neutral-950 border border-slate-800 w-fit mx-auto p-8 rounded-xl">
+      <div className="grid grid-cols-2 p-2 max-w-4xl mx-auto gap-9">
+        <Img src={profileImage} alt="teste" className="rounded-md" />
         <div>
-          <h4>Quem sou eu</h4>
-          <h1>Lucas Santiago</h1>
-          <h2>Frontend Developer</h2>
-          <p>
+          <h4 className="text-violet-500">Quem sou eu</h4>
+          <h1 className="text-4xl">Lucas Santiago</h1>
+          <h2 className="text-2xl">Frontend Developer</h2>
+          <p className="text-slate-400">
             Meu nome é Iuri Silva, ou “iuricode” (é como me chamam agora) sou o
             criador do eFront, um material de ensino de frontend pela internet.
             Atualmente sou freelancer como Frontend Developer e UI Designer.
@@ -36,6 +24,7 @@ const MyProfile = () => {
           <div></div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
