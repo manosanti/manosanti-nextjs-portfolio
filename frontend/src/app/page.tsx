@@ -1,3 +1,4 @@
+import Experience from "./components/Experience";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import MyProfile from "./components/MyProfile";
@@ -8,6 +9,7 @@ export default function Home() {
       <Header />
       <Hero />
       <MyProfile />
+      <Experience />
       
     </div>
   );
